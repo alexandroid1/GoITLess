@@ -1,0 +1,46 @@
+<!-- - Понятие тега и атрибута.
+        - Язык разметки HTML, структура HTML-документа.
+        - Инструменты веб-разработчика: Chrome DevTools, вкладка elements.
+        - Поток документа.
+        - Строчные и блочные элементы.
+        - Основные теги: заголовки, абзацы, списки, изображения, ссылки и т. д.
+        - Группировка контента по смыслу, обертки - div.
+        - Валидация.
+        - Абсолютные и относительные пути
+        - Стиль HTML-кода.
+        - Понятие семантической верстки.  -->
+
+
+    <h1>Hello World</h1>
+
+    <p class="discript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero unde error non ea corrupti similique doloribus qui eveniet.
+        Accusantium, sequi labore. Dolore sed recusandae minima earum ipsum nesciunt totam delectus!</p>
+
+    <img src="img/cat.jpg" alt="my new img" width="640" height="360">
+
+    <a href="#">i am link</a>
+
+    <header></header>
+
+    <main></main>
+
+    <footer></footer>
+
+----------------------------------------------------------------------------------
+    Можем дать имя разделу и вынести его на другой сайт? - article
+    Можем дать имя разделу и не можем вынести его на другой сайт? - section
+    Не можем дать явное название? - div
+
+    <div></div>
+
+    <section></section>
+
+    <article></article>
+-------------------------------------------------------------------------------------
+    <nav></nav>
+
+    <ul>
+        <li>
+
+        </li>
+    </ul>
