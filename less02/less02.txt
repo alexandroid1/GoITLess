@@ -31,4 +31,5 @@ https://gitforwindows.org/ - git bash
 VIM
 1."A" - пишем комментарий
 2."ESC"
-3.":wq => ENTER"  
+3.":wq => ENTER"
+4.  
