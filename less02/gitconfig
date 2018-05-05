@@ -1,0 +1,98 @@
+$HOME/.gitconfig
+or
+# edit config file
+git config --global --edit 
+
+# show curent directory
+pwd 
+
+# set global config in config file
+git config --global <set some config>
+
+
+#show config file in project
+cat .git/config
+
+
+#show HEAD file in project
+cat .git/HEAD
+
+
+# -------------------------------------------------------------------------------------------alias config in .gitconfig file
+[alias]
+# return commit from history - git co <hash>, where <hash> - first 7 characters in commit 
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+# -----------------------------------------------------------------------------------------------
+
+
+# -----------------------------------------------------------------------------------------------alias config in terminal
+git config --global alias.co checkout
+git config --global alias.ci commit
+git config --global alias.st status
+git config --global alias.br branch
+git config --global alias.hist "log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short"
+git config --global alias.type 'cat-file -t'
+git config --global alias.dump 'cat-file -p'
+# ----------------------------------------------------------------------------------------------- 
+
+
+# log in one line
+git log --pretty=oneline
+
+
+# show file text in commit 
+cat <file name>
+
+
+# create tag for commit
+git tag <tag name>
+# checkout to <tag name> parent
+git checkout <tag name>^
+# show all tags
+git tag
+
+
+# checkout to file version in repo, before "git add ." 
+git checkout <file name>
+
+
+# unstage file changes, after "git add .", then enter git checkout <file name> - to clear head from changes
+git reset HEAD <file name>
+
+
+# revert our last commit 
+git revert HEAD --no-edit
+
+
+# delete last commit from history and update working directory from <hash name or tag name> head (<hash name or tag name> - parent of delete commit)
+git reset --hard <hash name or tag name>
+
+
+# edit last commit
+git commit --amend -m "add new line code in last commit"
+
+
+# create and checkout to new branch
+git checkout -b <branch name>
+
+
+# branch merge 
+git merge <branch name>
+
+
+# list of remote branches
+git branch -a
+
+
+# takes changes(commits) from remote repo, but dont merge it with local branch 
+git fetch
+
+
+
+
