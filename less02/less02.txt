@@ -32,4 +32,19 @@ VIM
 1."A" - пишем комментарий
 2."ESC"
 3.":wq => ENTER"
-4.  
+
+------------------------------------------------------------------------------
+
+Основные команды
+
+git push
+git pull
+git init
+git clone
+git commit -m "comment"
+git add <file name> or "."
+git status
+git checkout 
+git branch
+git merge
+
