@@ -1,0 +1,95 @@
+/* p {
+  color: red;
+} */
+
+/* #id_text {
+  color: blue;
+} */
+
+/* .class_text {
+  color: green;
+} */
+
+/* article p {
+  color: red;
+} */
+
+/* #id_article #id_text {
+  color: blue;
+} */
+
+/* .class_article .class_text {
+  color: green;
+} */
+
+/* article > p {
+  color: red;
+} */
+
+/* h1 + p {
+  color: blue;
+} */
+
+/* * {
+  color: green;
+} */
+
+/* -----------------------------------------! наследование */
+
+/* article {
+  color: red;
+} */
+
+/* #id_article {
+  color: blue;
+} */
+
+/* -----------------------------------------! Составляющие элемента: content, border, margin, padding. */
+
+/* .class_article {
+  width: 500px;
+  margin: 0 auto;
+  border: 3px solid black;
+  padding: 20px;
+  box-sizing: content-box;
+} */
+
+/* -----------------------------------------! Блочная верстка: свойство display: inline|inline-block|block */
+
+/* p {
+  display: inline;
+} */
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.class_article {
+  width: 30%;
+  border: 3px solid black;
+  padding: 5px;
+  display: inline-block;
+  /* 
+  отступ у inline эл
+  margin-left: -4px; */
+}
+
+/* -----------------------------------------! div.wrapper, назначение, использование. */
+
+/* .wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
+} */
+
+.wrapper {
+  background-color: green;
+}
+
+.container {
+  background-color: gray;
+}
+
+/* -----------------------------------------! Горизонтальное и вертикальное выравнивание строчных и блочных элементов: margin, text-align, line-height, vertical-align. */
