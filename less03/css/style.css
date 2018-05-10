@@ -60,21 +60,21 @@
   display: inline;
 } */
 
-.container {
+/* .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 50px 0;
-}
+} */
 
-.class_article {
+/* .class_article {
   width: 30%;
   border: 3px solid black;
   padding: 5px;
-  display: inline-block;
-  /* 
-  отступ у inline эл
+  display: inline-block; */
+
+/* отступ у inline эл
   margin-left: -4px; */
-}
+/* } */
 
 /* -----------------------------------------! div.wrapper, назначение, использование. */
 
@@ -83,13 +83,90 @@
   margin: 0 auto;
   padding: 50px 0;
 } */
-
+/* 
 .wrapper {
   background-color: green;
 }
 
 .container {
   background-color: gray;
-}
+} */
 
 /* -----------------------------------------! Горизонтальное и вертикальное выравнивание строчных и блочных элементов: margin, text-align, line-height, vertical-align. */
+
+/* схолопование вертикальных марджинов */
+/* выпадание вертикального марджина */
+/* только для блочных элементов!!!!!!!!!!!! */
+
+.outer-block {
+  width: 500px;
+  height: 500px;
+  background-color: green;
+  margin: 0 auto;
+  /* margin-left: auto; */
+}
+
+/* .inner-block {
+  width: 100px;
+  height: 100px;
+  background: red;
+} */
+
+/* .inner-block-blue {
+  width: 100px;
+  height: 100px;
+  background: blue;
+} */
+
+/* .outer-block__text {
+  text-align: center;
+  font-size: 48px;
+} */
+
+/* ------------------------------------------------------ vertical-align */
+
+/* .inner-block {
+  width: 100px;
+  height: 100px;
+  background: red;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.inner-block-blue {
+  width: 100px;
+  height: 200px;
+  background: blue;
+  display: inline-block;
+  vertical-align: top;
+} */
+
+/* ---------------------------Оформление текста */
+/* .outer-block__text {
+  text-align: center;
+  font-size: 48px;
+  color: white;
+  font-weight: 600;
+  text-decoration: underline;
+  line-height: 1.2;
+} */
+
+/* ---------------------------------------nav */
+
+/* .nav__menu-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.menu-list__item {
+  display: inline-block;
+  list-style: none;
+  margin-right: 50px;
+}
+
+.menu-list__link {
+  text-decoration: none;
+  color: red;
+  font-size: 24px;
+} */
