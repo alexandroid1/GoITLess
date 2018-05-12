@@ -18,7 +18,7 @@
   color: blue;
 } */
 
-/* .class_article .class_text {
+/* article .class_text {
   color: green;
 } */
 
@@ -51,14 +51,11 @@
   margin: 0 auto;
   border: 3px solid black;
   padding: 20px;
-  box-sizing: content-box;
+  box-sizing: border-box;
+  background-color: aqua;
 } */
 
 /* -----------------------------------------! Блочная верстка: свойство display: inline|inline-block|block */
-
-/* p {
-  display: inline;
-} */
 
 /* .container {
   max-width: 1000px;
@@ -66,15 +63,15 @@
   padding: 50px 0;
 } */
 
-/* .class_article {
+.class_article {
   width: 30%;
   border: 3px solid black;
   padding: 5px;
-  display: inline-block; */
+  display: inline-block;
 
-/* отступ у inline эл
-  margin-left: -4px; */
-/* } */
+  /* отступ у inline эл */
+  /* margin-left: -4px; */
+}
 
 /* -----------------------------------------! div.wrapper, назначение, использование. */
 
@@ -83,12 +80,15 @@
   margin: 0 auto;
   padding: 50px 0;
 } */
-/* 
-.wrapper {
+
+/* .wrapper {
   background-color: green;
 }
 
 .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0;
   background-color: gray;
 } */
 
@@ -103,24 +103,26 @@
   height: 500px;
   background-color: green;
   margin: 0 auto;
-  /* margin-left: auto; */
+  box-sizing: border-box;
 }
 
 /* .inner-block {
   width: 100px;
   height: 100px;
   background: red;
-} */
+  display: inline-block;
+}
 
-/* .inner-block-blue {
+.inner-block-blue {
   width: 100px;
   height: 100px;
   background: blue;
+  display: inline-block;
 } */
 
 /* .outer-block__text {
   text-align: center;
-  font-size: 48px;
+  font-size: 24px;
 } */
 
 /* ------------------------------------------------------ vertical-align */
@@ -130,7 +132,7 @@
   height: 100px;
   background: red;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .inner-block-blue {
@@ -138,7 +140,7 @@
   height: 200px;
   background: blue;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 } */
 
 /* ---------------------------Оформление текста */
@@ -147,13 +149,13 @@
   font-size: 48px;
   color: white;
   font-weight: 600;
-  text-decoration: underline;
   line-height: 1.2;
+  margin: 0;
 } */
 
 /* ---------------------------------------nav */
 
-/* .nav__menu-list {
+.nav__menu-list {
   margin: 0;
   padding: 0;
   text-align: center;
@@ -169,4 +171,8 @@
   text-decoration: none;
   color: red;
   font-size: 24px;
-} */
+}
+
+.menu-list__link:hover {
+  color: black;
+}
