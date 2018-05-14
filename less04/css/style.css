@@ -1,44 +1,40 @@
 /* a {
-  display: block;
-  width: 200px;
-  height: 100px;
-  margin: 0 auto;
+  display: inline-block;
   border: 1px solid black;
   text-decoration: none;
-  margin-bottom: 30px;
-
-  color: green;
-  text-align: center;
-  font-size: 24px;
-  line-height: 100px;
-} */
-
-
-/* button {
-  display: block;
-  width: 200px;
+  padding: 0 10px;
   height: 100px;
-  margin: 0 auto;
-  padding: 0;
 
-  text-align: center;
+  color: green;
   font-size: 24px;
   line-height: 100px;
-  font-family: sans-serif, serif;
-  color: green;
 
+  font-family: "Pacifico", cursive;
+}
+
+button {
+  font-size: 48px;
+  color: red;
+
+  background-color: transparent;
   border: 1px solid black;
-  border-radius: 10px;
-  background: transparent;
-  outline: none;
   cursor: pointer;
+  outline: none;
+  height: 100px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
 } */
 
 .wrapper {
   min-height: 100vh;
-  /* background-color: red;
-  background-image: url('../img/cute-3252251_1280.jpg');
+  /* background-color: red; */
+  background-image: url('../img/flowers.jpg');
   background-repeat: no-repeat;
-  background-position: center center;
+  /* background-position: center center;
   background-size: cover; */
+
+  /* background: url("../img/cute-3252251_1280.jpg") no-repeat center center ; */
+  /* background-size: cover;  */
 }
+
