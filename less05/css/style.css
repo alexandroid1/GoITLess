@@ -1,0 +1,70 @@
+.wrapper {
+  min-height: 100vh;
+  /* background-color: #00ff00;
+  background-color: rgb(0, 0, 0);
+  background-color: rgb(100%, 100%, 100%);
+  background-color: hsl(0, 0%, 0%);
+  background-color: rgba(255, 0, 0, 0.5); */
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+
+/* h1 {
+  border: 1px solid black;
+} */
+
+/* h1::before {
+  content: "#";
+  color: red;
+}
+
+h1::after {
+  content: "#";
+  color: red;
+} */
+
+/* ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 36px;
+}
+
+li::before {
+  display: inline-block;
+  content: url("../img/facebook-logo-button.svg");
+} */
+
+/* ------------------------------------------------------------------------  float*/
+
+p {
+  font-size: 24px;
+}
+
+
+
+.block-1 {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  /* float: left; */
+}
+
+.block-2 {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+}
+
+/* .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+} */
