@@ -14,10 +14,9 @@ https://fontawesome.com/
   /* background-image: url(...); */
   /* background-repeat: no-repeat; */
   /* background-position: center center;*/
-  /* background-attachment: fixed;*/
 
  /* краткая запись */
-  background: #ccf url("...") no-repeat center center fixed;
+  background: #ccf url("...") no-repeat center center ;
   background-size: cover;
 -------------------------------------------------------------------------Контентные (img) vs оформительные (background-img) изображения.
 
