@@ -1,0 +1,92 @@
+/* h1::first-letter {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: aquamarine;
+} */
+
+/* h1:hover {
+  color: aquamarine;
+} */
+
+/* p:not(.classy) {
+  color: red;
+}
+
+.wrapper :not(p) {
+  color: green;
+} */
+
+ul {
+  font-size: 56px;
+}
+
+/* li:first-child {
+  color: blue;
+}
+
+li:last-child {
+  color: red;
+} */
+
+/* li:nth-child(2) {
+  color: green;
+} */
+
+/* --------------------------------------------- */
+
+/* .card {
+  width: 120px;
+  height: 160px;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+
+.card img {
+  display: block;
+  margin: 0 auto 40px auto;
+}
+
+.item {
+  background-color: red;
+  width: 65%;
+  display: inline-block;
+}
+
+.price {
+  background-color: green;
+  width: 30%;
+  display: inline-block;
+}
+
+
+.card:hover .item {
+  background-color: blue;
+}
+
+.card:hover .price {
+  background-color: aquamarine;
+} */
+/* ------------------------------------------------------------- counter */
+
+/* ul {
+  counter-reset: variable;
+}
+
+li {
+  counter-increment: variable;
+  list-style: none;
+}
+
+li::before {
+  display: inline-block;
+  content: counter(variable);
+  margin: 0 10px 0 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 100px;
+} */
