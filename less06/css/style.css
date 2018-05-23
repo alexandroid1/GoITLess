@@ -1,4 +1,4 @@
-/* h1::first-letter {
+/* h1::selection {
   font-size: 50px;
   text-transform: uppercase;
   color: aquamarine;
@@ -16,9 +16,9 @@
   color: green;
 } */
 
-ul {
+/* ul {
   font-size: 56px;
-}
+} */
 
 /* li:first-child {
   color: blue;
@@ -28,7 +28,7 @@ li:last-child {
   color: red;
 } */
 
-/* li:nth-child(2) {
+/* li:nth-child(odd) {
   color: green;
 } */
 
@@ -68,7 +68,7 @@ li:last-child {
 } */
 /* ------------------------------------------------------------- counter */
 
-/* ul {
+ul {
   counter-reset: variable;
 }
 
@@ -78,8 +78,8 @@ li {
 }
 
 li::before {
-  display: inline-block;
   content: counter(variable);
+  display: inline-block;
   margin: 0 10px 0 0;
   width: 100px;
   height: 100px;
@@ -89,4 +89,4 @@ li::before {
   vertical-align: middle;
   text-align: center;
   line-height: 100px;
-} */
+}

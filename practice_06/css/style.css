@@ -1,5 +1,5 @@
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", arial, sans-serif;
 }
 
 .clearfix::after {
@@ -8,4 +8,187 @@ body {
   clear: both;
 }
 
+.section {
+  width: 980px;
+  margin: 0 auto;
+  border-bottom: 1px solid lightgray;
+}
 
+.header-wrapper {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.masthead-nav__list {
+  margin: 0;
+  padding: 0;
+}
+
+.masthead-nav__item {
+  float: left;
+  list-style: none;
+  margin-right: 40px;
+}
+
+.masthead-nav__item:last-child {
+  margin-right: 0;
+}
+
+.masthead-nav__link {
+  color: #aeaeae;
+  text-decoration: none;
+  font-family: "Roboto", arial, sans-serif;
+  font-weight: 100;
+}
+
+.masthead-nav {
+  float: right;
+}
+.mastehader-logo__img {
+  display: block;
+}
+
+.mastheder-logo__link {
+  display: block;
+  float: left;
+}
+
+.masthead-nav__link:hover {
+  color: #3498d9;
+}
+
+.masthead-header {
+  padding: 20px 0;
+}
+
+.hero-section {
+  padding: 100px 0 0 0;
+  background-image: url("../img/hero-hardware.jpg");
+  background-repeat: no-repeat;
+  background-position: 140px 20px;
+}
+
+.hero-section__title {
+  margin: 0 0 240px 0;
+  font-size: 52px;
+  font-weight: 100;
+  color: #555;
+}
+
+.hero-section__btn-cont {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 40px 0;
+}
+
+.hero-section__btn-list {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.hero-section__btn-item {
+  display: inline-block;
+  list-style: none;
+  margin-right: 40px;
+}
+
+.hero-section__btn-item:last-child {
+  margin-right: 0;
+}
+
+.hero-section__btn {
+  color: #3498d9;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.hero-section__btn:hover {
+  color: #555;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: 100;
+  color: #555;
+  margin: 0 0 20px 0;
+}
+
+.text-descript {
+  font-weight: 100;
+  color: #555;
+  line-height: 1.8;
+}
+
+.advantage-section {
+  text-align: center;
+}
+
+.advantage-section__discript {
+  width: 500px;
+  margin: 0 auto 30px auto;
+}
+
+.advantage-section {
+  padding: 50px 0;
+}
+
+.advantage-section__advantage-list {
+  padding: 0;
+  margin: 0;
+}
+
+.advantage-list__item {
+  list-style: none;
+  float: left;
+  width: 300px;
+  margin: 0 calc(80px / 6);
+}
+
+.advantage-item__title {
+  font-size: 24px;
+  font-weight: 100;
+  color: #555;
+  margin: 0 0 20px 0;
+}
+
+.advantage-item__discript {
+  margin: 0;
+}
+
+.icon {
+  color: #555;
+  font-size: 48px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  border: 1px solid #555;
+  margin-bottom: 20px;
+}
+
+.animation-section__link {
+  font-size: 22px;
+  color: #3498d9;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+.animation-section__discript-container {
+  width: 500px;
+  float: right;
+  margin-top: 100px;
+}
+
+.animation-section__img {
+  display: block;
+}
+
+.animation-section {
+  padding: 30px 0 0 0;
+}
+
+.animation-section__wrapper {
+  margin-bottom: 100px;
+}
