@@ -5,37 +5,13 @@
 http://html5doctor.com/
 
 
+canvas
 
+https://idg.net.ua/blog/primery-animatsii-html5-canvas
+http://andrew.wang-hoyer.com/experiments/cloth/
 
 
 ----------------------------------------------------------------------------
-
-
-progress
-keygen
-output
-meter
-command
-menu
-embed
-object
-param
-source
-canvas
-track
-map
-area
-time
-code
-video
-audio
-kbd
-samp
-var
-bdi
-bdo
-ruby, rt, rp
-
 
 
 
