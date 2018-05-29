@@ -1,0 +1,30 @@
+.wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+/* ------------------------------------------main, aside, adress, pre */
+
+section {
+  display: flex;
+}
+
+aside {
+  width: 30%;
+  margin-top: 50px;
+}
+
+section p {
+  font-size: 18px;
+}
+
+aside p {
+  font-size: 14px;
+}
+/* --------------------------------------- wbr*/
+.wbr {
+  width: 200px;
+}
+/* --------------------------------------- */
+
+
+

@@ -1,0 +1,41 @@
+Занятие #2:
+- Стандарт HTML5. 
+- Основные семантические тег
+---------------------------------------------------------------------------
+http://html5doctor.com/
+
+
+
+
+
+----------------------------------------------------------------------------
+
+
+progress
+keygen
+output
+meter
+command
+menu
+embed
+object
+param
+source
+canvas
+track
+map
+area
+time
+code
+video
+audio
+kbd
+samp
+var
+bdi
+bdo
+ruby, rt, rp
+
+
+
+
