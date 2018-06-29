@@ -1,0 +1,43 @@
+
+Занятие #1:
+
+- Кроссбраузерность. Вендорные префиксы. Autoprefixer.
+- Философия Progressive Enhancement.
+- Retina. Работа с SVG. SVG-спрайты.
+
+----------------------------------------------------------------------
+Кроссбраузерность
+ - Скидываем стили
+ - Валидный код
+ - Вендорные префиксы
+ - Проверка на can i use
+
+
+ https://caniuse.com/
+ http://autoprefixer.github.io/
+ https://andrewslobodianiuk.github.io/practice/ld1/build/
+ https://htmlacademy.ru/blog/7-progressive-enhancement
+
+
+SVG
+ - Масштабирование
+ - Производительность
+ - Удобство
+ - Анимация и редактирование
+ - Малый размер
+
+ https://jakearchibald.github.io/svgomg/
+ https://andrewslobodianiuk.github.io/practice/ld2/build/
+
+
+
+
+
+
+
+
+
+
+
+
+

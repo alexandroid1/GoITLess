@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+}
+
+.image-container {
+  max-width: 960px;
+  min-width: 320px;
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+div {
+  background-image: url(....img1);
+}
+
+
+@media screen and ...... pixel-ratio .... 2 {
+  div {
+    background-image: url(....img2);
+  }
+} 
+
+
+

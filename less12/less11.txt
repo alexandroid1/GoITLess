@@ -1,0 +1,23 @@
+Занятие #2:
+- Введение в CSS grid
+- Pixel perfect верстка
+----------------------------------------------------------------------
+В Chrome перейдіть на chrome://flags та ввімкніть "experimental web platform features", те ж саме слід зробити і для Opera (opera://flags). В Firefox слід ввімкнути layout.css.grid.enabled.
+
+                                                                                                                                              
+https://caniuse.com/#search=grid
+https://codeguida.com/post/740
+https://css-tricks.com/snippets/css/complete-guide-grid/
+http://cssgridgarden.com/#ru
+
+http://www.welldonecode.com/perfectpixel/
+https://andrewslobodianiuk.github.io/practice/ld2/build/
+
+
+
+
+
+
+
+
+
