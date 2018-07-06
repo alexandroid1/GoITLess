@@ -1,0 +1,23 @@
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+form {
+  background-color: lightgray;
+  padding: 20px;
+}
+
+li {
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.input_valid:valid {
+  border-color: green;
+}
+
+.input_valid:invalid {
+  border-color: red;
+}

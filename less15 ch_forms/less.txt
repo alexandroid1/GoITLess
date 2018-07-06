@@ -1,0 +1,28 @@
+Занятие #2:
+- Формы, валидная и семантичная верстка форм.
+- input всевозможных типов, от text до range.
+- label
+- placeholder и его стилизация.
+- Важность атрибута name.
+- autofocus
+- required
+- fieldset и legend
+- checkbox и radio
+- button:submit и button:reset
+- select, optgroup, datalist
+-----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
