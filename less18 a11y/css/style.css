@@ -1,0 +1,117 @@
+[hidden] {
+  display: block;
+}
+
+header {
+  padding: 20px 0 0 0;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+a {
+  font-size: 18px;
+}
+
+a:focus {
+  color: red;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+.wrapper {
+  width: 960px;
+  margin: 0 auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+section ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section ul li {
+  list-style: none;
+  width: 33%;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+section {
+  border-bottom: 1px solid #000;
+}
+
+form {
+  padding: 50px 0;
+}
+
+input {
+  outline: none;
+}
+
+input:invalid {
+  background: #fdd;
+}
+input:valid {
+  background: #dfd;
+}
+
+input:focus-within {
+  border: 5px solid green;
+}
+
+/* body {
+  color: #fdd;
+  background-color: #dfd;
+} */
+
+
+:root {
+  --fontColor: black; 
+}
+
+
+body {
+  background-color: var(--fontColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+

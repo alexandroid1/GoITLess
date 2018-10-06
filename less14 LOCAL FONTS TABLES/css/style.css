@@ -1,0 +1,63 @@
+@import "font.css";
+
+h1,
+p {
+  font-family: "Roboto", serif;
+  font-weight: 600;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+:root {
+  font-size: 10px;
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: grey;
+  height: 500px;
+  font-size: 20px;
+}
+
+/* 1mm	3.8px
+1cm	38px
+1pt	4/3px
+1pc	16px */
+
+/* Абсолютные: px mm, cm, pt, pc
+Относитльеные: %, em и rem, vh и vw */
+
+
+.block {
+  /* width: 50vw;  */
+  height: 100vh;
+  background-color: green;
+  /* margin: 10%; */
+}
+/* ---------------------------------------------------------------------------------------------- */
+
+table,
+td,
+tr {
+  border: 1px solid black;
+}
+
+td {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  /* border-collapse: separate; */
+}
+
+

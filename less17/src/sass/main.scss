@@ -1,0 +1,87 @@
+@import "_vars";
+@import "fonts";
+@import "libs";
+@import "mixins";
+
+$danger: red;
+$access: green;
+$warning: yellow;
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+%ul-nav {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style: none;
+  }
+}
+
+ul {
+  @extend %ul-nav;
+
+  li {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// .wrapper__btn {
+//   width: 100px;
+//   height: 50px;
+
+//   &--red {
+//     background-color: $danger;
+//   }
+
+//   &--green {
+//     background-color: $access;
+//   }
+
+//   &--yellow {
+//     background-color: $warning;
+//   }
+// }
+
+
+// %size {
+//   width: 100px;
+//   height: 50px;
+// }
+
+// .btn__yellow {
+//   @extend .btn__red;
+//   @extend %size;
+// }
+
+// @mixin border-radius {
+//   border-radius: 50%;
+// }
+
+// .wrapper__btn--red  {
+//   @include border-radius;
+// }
+
+.block {
+  width: 200px;
+  // height: 200px;
+  background-color: lightblue;
+  position: relative;
+  box-shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.75);
+
+  @include triangle_with_shadow('bottom', lightblue, 1rem);
+}
+
+
+body {
+  @include linx($access, $danger, $warning, $access);
+  font-size: ;
+}

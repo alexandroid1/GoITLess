@@ -1,3 +1,7 @@
 --------------------------------- Псевдоклассы: hover, focus, f/l-сhild, nth-child, nth-last-child, not.
 --------------------------------- CSS счетчики.
 http://preview.themeforest.net/item/neue-app-landing-page/full_screen_preview/5142303?_ga=1.971185.165248246.1491801787&ref=designss
+
+
+- Абсолюты
+- верстка карточки

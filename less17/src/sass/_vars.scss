@@ -1,0 +1,34 @@
+
+// 1rem = 10px
+:root {
+    font-size: 62.5%;
+}
+
+
+@function rem($n) {
+    @return $n / 10 + 0rem;
+  }
+
+// -----------------------------------------project vars
+
+// $mainColor: ;
+
+// $mainFont: ;
+// $semiFont: ;
+
+// -----------------------------------------grid settings
+$grid-gutter-width: 30px !default;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1140px);
+
+.w-100 {
+  width: 100%;
+}
+
+
+
+
+
+
+
+

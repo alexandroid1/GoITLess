@@ -1,0 +1,304 @@
+@mixin ul-nav {
+  margin: 0;
+  padding: 0;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+// Hide block
+%visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+// Assuming the parent element has position: relative;
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+
+//Black and White Opacity Functions
+@function black($opacity) {
+  @return rgba(black, $opacity);
+}
+
+@function white($opacity) {
+  @return rgba(white, $opacity);
+}
+
+
+//full-page overlay, position relative parent!!!
+@mixin coverer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/// Triangle helper mixin
+/// @param {Direction} $direction - Triangle direction, either `top`, `right`, `bottom` or `left`
+/// @param {Color} $color [currentcolor] - Triangle color
+/// @param {Length} $size [1em] - Triangle size
+@mixin triangle($direction, $color: currentcolor, $size: 1em) {
+  @if not index(top right bottom left, $direction) {
+    @error "Direction must be either `top`, `right`, `bottom` or `left`.";
+  }
+
+  width: 0;
+  height: 0;
+  content: '';
+  z-index: 2;
+  border-#{($direction)}: ($size * 1.5) solid $color;
+  transform: translateX(-50%);
+
+  $perpendicular-borders: $size solid transparent;
+
+  @if $direction == top or $direction == bottom {
+    border-left:   $perpendicular-borders;
+    border-right:  $perpendicular-borders;
+  } @else if $direction == right or $direction == left {
+    border-bottom: $perpendicular-borders;
+    border-top:    $perpendicular-borders;
+  }
+}
+// Usage
+// .block:before {
+//   @include triangle(bottom, red, 2rem);
+//   position: absolute;
+//   left: 50%;
+//   bottom: 100%;
+// }
+
+
+
+//Only bottom !!!!!
+@mixin triangle_with_shadow(
+  $direction,
+  $color: currentcolor,
+  $size: 1rem,
+  $shadow: 0px 0px 14px 2px rgba(0, 0, 0, 0.75)
+) {
+  @if not index(top right bottom left, $direction) {
+    @error "Direction must be either `top`, `right`, `bottom` or `left`.";
+  }
+
+  &:before {
+    position: absolute;
+    left: 50%;
+    bottom: 100%;
+
+    width: 0;
+    height: 0;
+    content: "";
+    z-index: 2;
+    border-#{($direction)}: ($size) solid $color;
+    transform: translateX(-50%);
+
+    $perpendicular-borders: $size solid transparent;
+
+    @if $direction == top or $direction == bottom {
+      border-left: $perpendicular-borders;
+      border-right: $perpendicular-borders;
+    } @else if $direction == right or $direction == left {
+      border-bottom: $perpendicular-borders;
+      border-top: $perpendicular-borders;
+    }
+  }
+
+  & > .triangle {
+    width: $size * 1.5;
+    height: $size * 1.5;
+    z-index: -1;
+    position: absolute;
+    left: 50%;
+    top: -(($size * 1.5) / 2);
+    margin-left: -(($size * 1.5) / 2);
+    transform: rotate(45deg);
+
+    background-color: $color;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+  }
+}
+
+// Usage HTML
+//<div class="block">
+//<span class="triangle"></span>
+//</div>
+
+
+
+
+/// Mixin to customize scrollbars
+/// Beware, this does not work in all browsers
+/// @param {Length} $size - Horizontal scrollbar's height and vertical scrollbar's width
+/// @param {Color} $foreground-color - Scrollbar's color
+/// @param {Color} $background-color [mix($foreground-color, white, 50%)] - Scrollbar's color
+/// @example scss - Scrollbar styling
+///   USAGE -> @include scrollbars(1rem, slategray);
+@mixin scrollbars($size, $foreground-color, $background-color: mix($foreground-color, white,  50%)) {
+  // For Google Chrome
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+
+/// Mixin to place items on a circle
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: relative;
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+
+  > * {
+    display: block;
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    width:  $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        transform:
+                rotate($rot * 1deg)
+                translate($circle-size / 2)
+                rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+
+//HTML
+//<ul class='circle-container'>
+//<li><img src='http://lorempixel.com/100/100/city' alt="..." /></li>
+//<li><img src='http://lorempixel.com/100/100/nature' alt="..." /></li>
+//<li><img src='http://lorempixel.com/100/100/abstract' alt="..." /></li>
+//<li><img src='http://lorempixel.com/100/100/cats' alt="..." /></li>
+//<li><img src='http://lorempixel.com/100/100/food' alt="..." /></li>
+//<li><img src='http://lorempixel.com/100/100/animals' alt="..." /></li>
+//<li><img src='http://lorempixel.com/100/100/business' alt="..." /></li>
+//<li><img src='http://lorempixel.com/100/100/people' alt="..." /></li>
+//</ul>
+
+
+//Customize links
+@mixin linx ($link, $visit, $hover, $active) {
+  a {
+    color: $link;
+    &:visited {
+      color: $visit;
+    }
+    &:hover {
+      color: $hover;
+    }
+    &:active {
+      color: $active;
+    }
+  }
+}
+
+/// Event wrapper
+/// @param {Bool} $self (false) - Whether or not to include current selector
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Stripe builder
+/// @param {Direction} $direction - Gradient direction
+/// @param {List} $colors - List of colors
+/// @output `background-image` if several colors, `background-color` if only one
+@mixin stripes($direction, $colors) {
+  $length: length($colors);
+
+  @if $length > 1 {
+    $stripes: ();
+
+    @for $i from 1 through $length {
+      $stripe: (100% / $length) * ($i - 1);
+
+      @if $i > 1 {
+        $stripes: append($stripes, nth($colors, $i - 1) $stripe, comma);
+      }
+
+      $stripes: append($stripes, nth($colors, $i) $stripe, comma);
+    }
+
+    background-image: linear-gradient($direction, $stripes);
+  } @else if $length == 1 {
+    background-color: $colors;
+  }
+}
+
+
+

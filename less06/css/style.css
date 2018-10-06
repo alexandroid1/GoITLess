@@ -28,13 +28,13 @@ li:last-child {
   color: red;
 } */
 
-/* li:nth-child(odd) {
-  color: green;
+/* li:nth-child(even) {
+  color: red;
 } */
 
 /* --------------------------------------------- */
 
-/* .card {
+.card {
   width: 120px;
   height: 160px;
   border: 1px solid black;
@@ -58,17 +58,39 @@ li:last-child {
   display: inline-block;
 }
 
-
 .card:hover .item {
   background-color: blue;
 }
 
 .card:hover .price {
   background-color: aquamarine;
-} */
+}
+
+.card_img__container {
+  position: relative;
+}
+
+.card_menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+button {
+  background: transparent;
+}
+
+.card:hover .card_menu {
+  display: block;
+}
+
 /* ------------------------------------------------------------- counter */
 
-ul {
+/* ul {
   counter-reset: variable;
 }
 
@@ -89,4 +111,12 @@ li::before {
   vertical-align: middle;
   text-align: center;
   line-height: 100px;
+} */
+
+/* a {
+  color: black;
 }
+
+a:hover {
+  color: red;
+} */
