@@ -6,11 +6,11 @@ http://html5doctor.com/
 
 
 canvas
-
 https://idg.net.ua/blog/primery-animatsii-html5-canvas
 http://andrew.wang-hoyer.com/experiments/cloth/
+http://spielzeugz.de/html5/liquid-particles/
 
-
+ 
 ----------------------------------------------------------------------------
 
 
