@@ -1,9 +1,9 @@
-@import "font.css";
+@import "./font.css";
 
 h1,
 p {
   font-family: "Roboto", serif;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 /* -------------------------------------------------------------------------------------------------------- */
@@ -12,12 +12,12 @@ p {
   box-sizing: border-box;
 }
 
-html {
-  font-size: 10px;
-}
+/* html {
+  font-size: 16px;
+} */
 
 :root {
-  font-size: 10px;
+  font-size: 24px;
 }
 
 .wrapper {
@@ -34,11 +34,16 @@ html {
 1pc	16px */
 
 /* Абсолютные: px mm, cm, pt, pc
-Относитльеные: %, em и rem, vh и vw */
+Относитeльные: %, em и rem, vh и vw */
 
+/* p {
+  font-size: 1em;  
+} */
 
 .block {
-  /* width: 50vw;  */
+  /* width: 100px;
+  height: 100px; */
+  width: 20vh;
   height: 100vh;
   background-color: green;
   /* margin: 10%; */
@@ -60,4 +65,10 @@ table {
   /* border-collapse: separate; */
 }
 
+.table {
+  display: flex;
+}
 
+.table li {
+  list-style: none;
+}
