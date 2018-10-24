@@ -1,0 +1,219 @@
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  --mainColor: red;
+  --semiColor: green;
+  --textFontSize: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif, serif;
+  color: #5a5a56;
+  font-size: var(--textFontSize);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.mastheader_section {
+  padding-bottom: 400px;
+}
+
+.mastheader_section__wrapper {
+  background-color: #5a5a56;
+  background: url("../img/header_bg.jpg") no-repeat;
+  background-size: cover;
+}
+
+.mastheader_section {
+  padding-top: 50px;
+}
+
+.mastheader {
+  margin-bottom: 160px;
+}
+
+.mastheader_nav {
+  /* text-align: right; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav_list {
+  /* display: inline-block; */
+  display: flex;
+}
+
+.nav_list_item {
+  list-style: none;
+  /* display: inline-block; */
+  margin-right: 10px;
+}
+
+.item_link {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.hero_section {
+  margin: 0 auto;
+  width: 740px;
+  text-align: center;
+}
+
+.hero_section__title {
+  font-size: 60px;
+  color: black;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero_section__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  background-color: var(--mainColor);
+  padding: 20px 50px;
+  border-radius: 3px;
+}
+
+.hero_section__link_description {
+  font-size: 14px;
+}
+
+/* --------------------------------- */
+
+.new_design {
+  display: flex;
+}
+
+.new_design__description {
+  padding: 180px 140px 0 0;
+}
+
+.new_design__subtitle {
+  display: inline-block;
+  font-size: 16px;
+  color: #ff6d6d;
+  margin-bottom: 15px;
+}
+
+.new_design__title {
+  margin: 0 0 15px 0;
+  font-size: 40px;
+  color: black;
+  font-weight: 300;
+}
+
+.new_design__title span {
+  color: #ff6d6d;
+}
+
+.new_design__text {
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ----------------------------- */
+
+.our_features__wrapper {
+  background-color: #f6f5f3;
+}
+
+.our_features {
+  background-color: #f6f5f3;
+  background: url("../img/section3_bg.jpg") no-repeat;
+  padding: 130px 0 185px 0;
+}
+
+.our_features__header {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.our_features__sub_title {
+  color: #ff6d6d;
+  text-transform: uppercase;
+}
+
+.our_features__title {
+  margin: 0;
+  font-size: 40px;
+  color: #000000;
+  font-weight: 300;
+}
+
+/* new selector */
+.our_features__feature_list {
+  display: flex;
+  justify-content: space-around;
+  /* flex-direction: row-reverse; */
+}
+
+.feature_list__item {
+  list-style: none;
+  /* display: inline-block; */
+  /* width: calc(1154px / 3); */
+  /* width: 20%; */
+  text-align: center;
+}
+
+/* flex-grow */
+/* Если у всех элементов свойство flex-grow задано как 1, то каждый потомок получит внутри контейнера одинаковый размер. Если вы задали одному из потомков значение 2, то он заберёт в два раза больше места, чем другие. */
+
+/* flex-shrink */
+/* Определяет для flex-элемента возможность сжиматься при необходимости. */
+
+/* flex-basis */
+/* Определяет размер по умолчанию для элемента перед распределением пространства в контейнере. */
+
+.item_1 {
+  flex: 0 1 33%;
+  order: 1;
+  border: 3px solid var(--mainColor);
+}
+
+.item_2 {
+  flex: 0 1 33%;
+  order: 2;
+  border: 3px solid var(--semiColor);
+}
+
+.item_3 {
+  flex: 0 1 33%;
+  order: 3;
+  border: 3px solid blue;
+}
+
+.feature_list__item_title {
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.feature_list__item_text {
+  line-height: 1.6;
+}
+
+.feature_list__item_icon {
+  font-size: 36px;
+  color: #2394bc;
+  margin-bottom: 20px;
+}

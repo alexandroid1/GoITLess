@@ -1,0 +1,281 @@
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Roboto', sans-serif, serif;
+  color: #5a5a56;
+  font-size: 16px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.mastheader_section {
+  padding-bottom: 400px;
+}
+
+.mastheader_section__wrapper {
+  background-color: #5a5a56;
+  background: url('../img/header_bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+.mastheader_section {
+  padding-top: 50px;
+}
+
+.mastheader {
+  margin-bottom: 160px;
+}
+
+.mastheader_nav {
+  text-align: right;
+}
+
+.nav_list {
+  display: inline-block;
+}
+
+.nav_list_item {
+  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.item_link {
+  color: black;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.hero_section {
+  margin: 0 auto;
+  width: 740px;
+  text-align: center;
+}
+
+.hero_section__title {
+  font-size: 60px;
+  color: black;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.hero_section__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  display: inline-block;
+  background-color: #ff6d6d;
+  padding: 20px 50px;
+  border-radius: 3px;
+}
+
+.hero_section__link_description {
+  font-size: 14px;
+}
+
+/* --------------------------------- */
+
+.new_design {
+  display: flex;
+}
+
+.new_design__description {
+  padding: 180px 140px 0 0;
+}
+
+.new_design__subtitle {
+  display: inline-block;
+  font-size: 16px;
+  color: #ff6d6d;
+  margin-bottom: 15px;
+}
+
+.new_design__title {
+  margin: 0 0 15px 0;
+  font-size: 40px;
+  color: black;
+  font-weight: 300;
+}
+
+.new_design__title span {
+  color: #ff6d6d;
+}
+
+.new_design__text {
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ----------------------------- */
+
+.our_features__wrapper {
+  background-color: #f6f5f3;
+}
+
+.our_features {
+  background-color: #f6f5f3;
+  background: url('../img/section3_bg.jpg') no-repeat;
+  padding: 130px 0 185px 0;
+}
+
+.our_features__header {
+  text-align: center;
+  margin-bottom: 90px;
+}
+
+.our_features__sub_title {
+  color: #ff6d6d;
+  text-transform: uppercase;
+}
+
+.our_features__title {
+  margin: 0;
+  font-size: 40px;
+  color: #000000;
+  font-weight: 300;
+}
+
+.feature_list__item {
+  list-style: none;
+  display: inline-block;
+  width: calc(1154px / 3);
+  text-align: center;
+}
+
+.feature_list__item_title {
+  color: #000000;
+  margin: 0 0 20px 0;
+}
+
+.feature_list__item_text {
+  line-height: 1.6;
+}
+
+.feature_list__item_icon {
+  font-size: 36px;
+  color: #2394bc;
+  margin-bottom: 20px;
+}
+/* ------------------------------------ */
+
+.our_partners__wrapper {
+  background: url('../img/our_team_bg.jpg') no-repeat;
+  background-size: cover;
+}
+
+.our_parners {
+  padding: 110px 0 90px 0;
+}
+
+.our_parners__partners_list {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.our_partners__partner {
+  /* display: inline-block; */
+  /* width: 310px; */
+  flex: 0 1 25%;
+  text-align: center;
+  /* margin-right: 75px; */
+  list-style: none;
+}
+
+.our_partners__partner:last-child {
+  margin: 0;
+}
+
+.partner_avatar {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.partner_name {
+  margin: 0 0 10px 0;
+  color: white;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.partner_position {
+  margin: 0 0 35px 0;
+  color: #ff6d6d;
+  font-weight: 100;
+}
+
+.partner_cite {
+  margin: 0;
+  color: white;
+  font-weight: 100;
+  line-height: 1.6;
+}
+
+/* new selector */
+.our_partners__logos_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logos_list__item {
+  /* display: inline-block;
+  margin-right: 80px; */
+  list-style: none;
+}
+
+.my_featers__wrapper {
+  background-color: #f6f5f3;
+}
+
+.my_featers {
+  padding-top: 100px;
+}
+
+.my_featers__header {
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.my_featers__descr {
+  width: 665px;
+  text-align: center;
+  margin: 0 auto 110px auto;
+}
+
+.my_featers__img_cont {
+  width: 820px;
+  margin: 0 auto;
+}
+
+.my_featers__img {
+  display: block;
+}
