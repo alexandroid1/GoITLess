@@ -23,7 +23,7 @@ li {
 } */
 
 .input_valid {
-  border: 1px solid gray;
+  border: 2px solid red;
   padding: 0 0 0 10px;
   outline: none;
   height: 50px;
@@ -32,4 +32,16 @@ li {
   font-size: 20px;
   color: green;
   background-color: lightcyan;
+}
+
+.input_valid:focus {
+  border: 2px solid yellow;
+}
+
+.input_valid:hover {
+  border: 2px solid green;
+}
+
+.input_valid:valid {
+  border: 2px solid blueviolet;
 }
